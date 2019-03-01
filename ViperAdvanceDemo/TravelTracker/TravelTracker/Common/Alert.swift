@@ -19,12 +19,12 @@ struct Alert {
   let activityIndicator = UIActivityIndicatorView()
   
   func showAlert(withMessage message: String, title: String) {
-    
     let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
     let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     alertController.addAction(okAction)
     rootController?.present(alertController, animated: true, completion: nil)
-    
   }
+    
+    
   
 }

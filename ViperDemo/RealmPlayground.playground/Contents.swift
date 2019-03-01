@@ -2,14 +2,11 @@ import UIKit
 import RealmSwift
 
 class Dog: Object {
-    @objc dynamic var name : String! = ""
-    @objc dynamic var age : Int! = 0
-    @objc dynamic var id : Int! = 0
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
     
-    convenience init(id: Int, name: String, age : Int){
-        self.name = name
-        self.age = age
-        self.id = id
+    override static func primaryKey() -> String? {
+        return "id"
     }
 }
 
@@ -25,28 +22,66 @@ class Dog: Object {
 //        realm?.delete(objects)
 //    }
 //}
+var realm : Realm? = nil
 
-var realm : Realm? = try? Realm()
-try! realm?.write {
-    realm?.deleteAll()
+/**
+    Configuration to udpdate changes in the Objects schemas of the database.
+ 
+    - seealso:
+    [Realm schemas migration]
+    (https://realm.io/docs/swift/latest/#migrations)
+ 
+ */
+let config = Realm.Configuration(
+    // Set the new schema version. This must be greater than the previously used
+    // version (if you've never set a schema version before, the version is 0).
+    schemaVersion: 1,
+    
+    // Set the block which will be called automatically when opening a Realm with
+    // a schema version lower than the one set above
+    migrationBlock: { migration, oldSchemaVersion in
+        // We haven’t migrated anything yet, so oldSchemaVersion == 0
+        if (oldSchemaVersion < 1) {
+            // Nothing to do!
+            // Realm will automatically detect new properties and removed properties
+            // And will update the schema on disk automatically
+        }
+})
+
+// Tell Realm to use this new configuration object for the default Realm
+
+Realm.Configuration.defaultConfiguration = config
+
+do{
+    realm = try Realm()
+}catch let error {
+    print(error.localizedDescription)
 }
-let myDog = Dog(id: 1, name: "Blanco", age: 3)
+
+let myDog = Dog()
+myDog.id = 1
+myDog.name = "Güero"
 
 
 let puppies = realm?.objects(Dog.self)
-print(puppies?.count ?? "No puppies found")
-
-if(puppies?.filter("id == \(myDog.id)").count == 0){
+let predicater = NSPredicate(format: "id == \(myDog.id)")
+let update = true
+if(puppies?.filter(predicater).count == 0 || update){
     try? realm?.write {
-        realm?.add(myDog)
+        realm?.add(myDog, update: update)
     }
-}else { print("Element with id: \(myDog.id) already exist")}
+}else{
+    print("Error: A dog with the same id already exist, if you want upload please specifically")
+}
+
 
 print(puppies?.count ?? "No puppies found")
 
 puppies?.forEach({ (dog) in
     print("Dog name: \(dog.name)")
 })
+
+
 
 
 

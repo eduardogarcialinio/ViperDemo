@@ -19,15 +19,16 @@ protocol FruitListPresenterProtocol: class {
     var interactor: FruitListInputInteractorProtocol? {get set}
     var view: FruitListViewProtocol? {get set}
     var wireframe: FruitListWireFrameProtocol? {get set}
-
     func viewDidLoad()
     func showFruitSelection(with fruit: Fruit, from view: UIViewController)
+    func addFruit(withName name :String, andVitamin vitamin : String)
 }
 
 protocol FruitListInputInteractorProtocol: class {
     var presenter: FruitListOutputInteractorProtocol? {get set}
     //Presenter -> Interactor
     func getFruitList()
+    func addFruit(withName name :String, andVitamin vitamin : String)
 }
 
 protocol FruitListOutputInteractorProtocol: class {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1FAA6C2229B37D004BC7B1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FAA6B2229B37D004BC7B1 /* Configuration.swift */; };
+		9B1FAA722229C4C1004BC7B1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FAA712229C4C1004BC7B1 /* Alert.swift */; };
 		A91C90981FB2E3E8007096F8 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C90971FB2E3E8007096F8 /* FruitDetailView.swift */; };
 		A91C909A1FB2E402007096F8 /* FruitDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C90991FB2E402007096F8 /* FruitDetailPresenter.swift */; };
 		A91C909C1FB2E419007096F8 /* FruitDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C909B1FB2E419007096F8 /* FruitDetailProtocols.swift */; };
@@ -18,7 +20,7 @@
 		A9FE423F1FB2AB6800E7CF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FE423E1FB2AB6800E7CF18 /* Assets.xcassets */; };
 		A9FE42421FB2AB6800E7CF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FE42401FB2AB6800E7CF18 /* LaunchScreen.storyboard */; };
 		A9FE42571FB2AE7D00E7CF18 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE42561FB2AE7D00E7CF18 /* Common.swift */; };
-		A9FE42591FB2AF5A00E7CF18 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE42581FB2AF5A00E7CF18 /* Fruit.swift */; };
+		A9FE42591FB2AF5A00E7CF18 /* FruitEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE42581FB2AF5A00E7CF18 /* FruitEntity.swift */; };
 		A9FE425B1FB2B0CB00E7CF18 /* FruitListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE425A1FB2B0CB00E7CF18 /* FruitListProtocols.swift */; };
 		A9FE425D1FB2B0DC00E7CF18 /* FruitListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE425C1FB2B0DC00E7CF18 /* FruitListPresenter.swift */; };
 		A9FE425F1FB2B0F300E7CF18 /* FruitListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE425E1FB2B0F300E7CF18 /* FruitListInteractor.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		6D0FF7D83C9D61B7F5121BEA /* Pods-ViperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemo.release.xcconfig"; path = "Target Support Files/Pods-ViperDemo/Pods-ViperDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9AD01446FC6DBC1C8AD1CC88 /* Pods-ViperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemo.debug.xcconfig"; path = "Target Support Files/Pods-ViperDemo/Pods-ViperDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9B1FAA6B2229B37D004BC7B1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		9B1FAA712229C4C1004BC7B1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A91C90971FB2E3E8007096F8 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		A91C90991FB2E402007096F8 /* FruitDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailPresenter.swift; sourceTree = "<group>"; };
 		A91C909B1FB2E419007096F8 /* FruitDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailProtocols.swift; sourceTree = "<group>"; };
@@ -42,7 +46,7 @@
 		A9FE42411FB2AB6800E7CF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9FE42431FB2AB6800E7CF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9FE42561FB2AE7D00E7CF18 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		A9FE42581FB2AF5A00E7CF18 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		A9FE42581FB2AF5A00E7CF18 /* FruitEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitEntity.swift; sourceTree = "<group>"; };
 		A9FE425A1FB2B0CB00E7CF18 /* FruitListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListProtocols.swift; sourceTree = "<group>"; };
 		A9FE425C1FB2B0DC00E7CF18 /* FruitListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListPresenter.swift; sourceTree = "<group>"; };
 		A9FE425E1FB2B0F300E7CF18 /* FruitListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListInteractor.swift; sourceTree = "<group>"; };
@@ -69,6 +73,22 @@
 				6D0FF7D83C9D61B7F5121BEA /* Pods-ViperDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B1FAA6A2229B366004BC7B1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9B1FAA6D2229B625004BC7B1 /* Configuration */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9B1FAA6D2229B625004BC7B1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9B1FAA6B2229B37D004BC7B1 /* Configuration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		A5BA6B00469869E43C2AF531 /* Frameworks */ = {
@@ -158,6 +178,7 @@
 		A9FE42491FB2AB8A00E7CF18 /* FruitList */ = {
 			isa = PBXGroup;
 			children = (
+				9B1FAA6A2229B366004BC7B1 /* Database */,
 				A9FE42541FB2AE6A00E7CF18 /* Common */,
 				A9FE424F1FB2ABDD00E7CF18 /* View */,
 				A9FE424E1FB2ABDD00E7CF18 /* Interactor */,
@@ -188,7 +209,7 @@
 		A9FE424C1FB2ABDC00E7CF18 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A9FE42581FB2AF5A00E7CF18 /* Fruit.swift */,
+				A9FE42581FB2AF5A00E7CF18 /* FruitEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -221,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FE42561FB2AE7D00E7CF18 /* Common.swift */,
+				9B1FAA712229C4C1004BC7B1 /* Alert.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -357,15 +379,17 @@
 				A9FE425B1FB2B0CB00E7CF18 /* FruitListProtocols.swift in Sources */,
 				A91C90981FB2E3E8007096F8 /* FruitDetailView.swift in Sources */,
 				A9FE425D1FB2B0DC00E7CF18 /* FruitListPresenter.swift in Sources */,
+				9B1FAA722229C4C1004BC7B1 /* Alert.swift in Sources */,
 				A91C909C1FB2E419007096F8 /* FruitDetailProtocols.swift in Sources */,
 				A91C909E1FB2E429007096F8 /* FruitDetailWireFrame.swift in Sources */,
 				A9FE42691FB2B6FA00E7CF18 /* FruitListWireframe.swift in Sources */,
-				A9FE42591FB2AF5A00E7CF18 /* Fruit.swift in Sources */,
+				A9FE42591FB2AF5A00E7CF18 /* FruitEntity.swift in Sources */,
 				A9FE42571FB2AE7D00E7CF18 /* Common.swift in Sources */,
 				A91C909A1FB2E402007096F8 /* FruitDetailPresenter.swift in Sources */,
 				A9FE42371FB2AB6800E7CF18 /* FruitListView.swift in Sources */,
 				A9FE425F1FB2B0F300E7CF18 /* FruitListInteractor.swift in Sources */,
 				A9FE423D1FB2AB6800E7CF18 /* ViperDemo.xcdatamodeld in Sources */,
+				9B1FAA6C2229B37D004BC7B1 /* Configuration.swift in Sources */,
 				A9FE42351FB2AB6800E7CF18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demansolTech.ViperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -528,7 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demansolTech.ViperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -33,6 +33,10 @@ class FruitListPresenter: FruitListPresenterProtocol {
         interactor?.getFruitList()
     }
     
+    func addFruit(withName name: String, andVitamin vitamin: String) {
+        interactor?.addFruit(withName: name, andVitamin: vitamin)
+    }
+    
 }
 
 extension FruitListPresenter: FruitListOutputInteractorProtocol {

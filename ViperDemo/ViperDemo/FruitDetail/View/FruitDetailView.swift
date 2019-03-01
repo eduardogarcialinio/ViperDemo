@@ -34,7 +34,6 @@ class FruitDetailView: UIViewController,FruitDetailViewProtocol {
 
     func showFruitDetail(with fruit: Fruit) {
         title = fruit.name
-        fruitImage.image = UIImage(named: fruit.name)
         fruitNameLbl.text = fruit.name
         vitaminLbl.text = fruit.vitamin
     }
